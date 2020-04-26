@@ -1,0 +1,100 @@
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+  color: #777;
+  text-rendering: optimizeLegibility;
+  padding: 30px;
+}
+
+header {
+  height: 55vh;
+  background: linear-gradient(to bottom right, #7ed56f, #28b485);
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main h3 {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-size: 120%;
+}
+
+.main-input {
+  display: inline-block;
+  width: 480px;
+  height: 40px;
+  margin-bottom: 45px;
+  border-radius: 20px;
+}
+
+.btn {
+  position: absolute;
+  display: block;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  background: whitesmoke;
+  padding: 10px 30px;
+  border-radius: 35px;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.main-lists {
+  padding: 5px 10px;
+  color: #7ed56f;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.list_item {
+  padding: 0px 5px;
+  margin-bottom: 30px;
+  border-left: #28b485 solid 2px;
+  border-right: #28b485 solid 2px;
+}
+.main-lists h3 {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  padding-right: 20px;
+}
+
+.main-lists h3 span {
+  float: right;
+  margin: 0px 25px;
+  cursor: pointer;
+  font-size: 120%;
+}
+
+.list-checked {
+  background-color: rgba(185, 183, 183, 0.417);
+}
